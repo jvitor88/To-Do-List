@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background: #000000 url(./img/main-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.app{
+    width: 800px;
+    background-color: #efebeb;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-list{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #555;
+}
+
+.todo{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 20px 0px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.484);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+button{
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #0E5C8C;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.484);
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+input, select{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+.complete{
+    background-color: rgb(2, 141, 95);
+    margin-right: 5px;
+}
+
+.remove{
+    background-color: rgba(196,0,0,1);
+    width: 25px;
+}
