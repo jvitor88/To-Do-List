@@ -11,14 +11,9 @@ Aplicação criada se baseando desafio do Matheus Battisti - Hora de Codar, onde
 - React
 - JavaScript;
 
-## Foi utilizado:
-
-- React
-- JavaScript;
-
 ## Link do Projeto:
 
-👉 <a href="https://jvitor88.github.io/to-do-list/" target="_blank">Clique Aqui</a>
+👉 <a href="https://jvitor88.github.io/To-Do-List/" target="_blank">Clique Aqui</a>
 
  ### Minhas redes: 
 
