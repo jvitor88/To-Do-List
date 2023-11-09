@@ -14,9 +14,8 @@ body{
 }
 
 .app{
-    width: 800px;
     background-color: #39686c;
-    padding: 20px 30px;
+    padding: 20px 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #000000ad;
 }
@@ -98,3 +97,9 @@ input, select{
     width: 150px;
     color: #fff;
 }
+
+@media (min-width: 1000px) {
+    .app {
+      width: 800px;
+    }
+  }
