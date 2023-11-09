@@ -11,13 +11,12 @@ function App() {
 
   const [search, setSearch] = useState('')
 
-  const addProduct = (text, category) => {
+  const addProduct = (text) => {
     const newProducts = [
       ...products,
       {
         id: Math.floor(Math.random() * 10000),
         text,
-        category,
         isCompleted: false,
       },
     ]
