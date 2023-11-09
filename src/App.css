@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     padding: 30px;
-    background: #fff url(../main-bg.jpg) no-repeat;
+    background: #fff url(../main-bg.jpg) repeat;
     background-size: cover;
 }
 
@@ -54,7 +54,6 @@ h1{
 }
 
 button{
-    width: 200px;
     font-size: 20px;
     color: #fff;
     background-color: rgb(24, 41, 43);
@@ -88,18 +87,22 @@ input, select{
 .complete{
     background-color: rgb(2, 141, 95);
     margin-right: 5px;
-    width: 150px;
     color: #fff;
 }
 
 .remove{
     background-color: rgba(196,0,0,1);
-    width: 150px;
     color: #fff;
 }
 
 @media (min-width: 1000px) {
     .app {
       width: 800px;
+    }
+    .complete{
+        width: 150px;
+      }
+    .remove{
+      width: 150px;
     }
   }
