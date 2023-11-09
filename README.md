@@ -1,10 +1,10 @@
-# Projeto To Do List
+# Lista de Compras
 
-<img src="https://uploaddeimagens.com.br/images/004/625/170/full/todolisttt.PNG?1696285145" width="400" />
+<img src="https://uploaddeimagens.com.br/images/004/659/884/full/lista_de_compras.PNG?1699503215" width="400" />
 
 ## Objetivo:
 
-Aplicação criada se baseando desafio do Matheus Battisti - Hora de Codar, onde foi solicitado a criação de uma aplicação para adicionar tarefas. 
+Aplicação criada se baseando no desafio do Matheus Battisti - Hora de Codar, onde criei uma lista de compras personalizada onde é possível marcar os produtos já selecionados facilitando o controle. 
 
 ## Foi utilizado:
 
@@ -13,7 +13,7 @@ Aplicação criada se baseando desafio do Matheus Battisti - Hora de Codar, onde
 
 ## Link do Projeto:
 
-👉 <a href="https://jvitor88.github.io/To-Do-List/" target="_blank">Clique Aqui</a>
+👉 <a href="https://jvitor88.github.io/lista-compras/" target="_blank">Clique Aqui</a>
 
  ### Minhas redes: 
 
