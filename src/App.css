@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     padding: 30px;
-    background: #fff url(./main-bg.jpg) no-repeat;
+    background: #fff url(../main-bg.jpg) no-repeat;
     background-size: cover;
 }
 
