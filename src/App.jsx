@@ -1,19 +1,19 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-import Todo from './components/todo/todo';
-import TodoForm from './components/TodoForm/TodoForm';
-import Search from './components/search/search';
+import Product from './components/product/product'
+import ProductForm from './components/productForm/productForm'
+import Search from './components/search/search'
 
 import './App.css';
 
 function App() {
-  const [todos, setTodos] = useState([])
+  const [products, setProducts] = useState([])
 
-  const [search, setSearch] = useState(''); // Corrigido aqui
+  const [search, setSearch] = useState('')
 
-  const addTodo = (text, category) => {
-    const newTodos = [
-      ...todos,
+  const addProduct = (text, category) => {
+    const newProducts = [
+      ...products,
       {
         id: Math.floor(Math.random() * 10000),
         text,
@@ -22,45 +22,45 @@ function App() {
       },
     ]
 
-    setTodos(newTodos)
+    setProducts(newProducts)
   }
 
-  const removeTodo = (id) => {
-    const newTodos = [...todos]
-    const filteredTodos = newTodos.filter(todo =>
-      todo.id !== id ? todo : null
+  const removeProduct = (id) => {
+    const newProducts = [...products]
+    const filteredProducts = newProducts.filter(product =>
+      product.id !== id ? product : null
     )
-    setTodos(filteredTodos)
+    setProducts(filteredProducts)
   }
 
-  const completeTodo = (id) => {
-    const newTodos = [...todos]
-    newTodos.map((todo) => todo.id === id ? todo.isCompleted = !todo.isCompleted : todo)
-    setTodos(newTodos)
+  const completeProduct = (id) => {
+    const newProducts = [...products]
+    newProducts.map((product) => product.id === id ? product.isCompleted = !product.isCompleted : product)
+    setProducts(newProducts)
   }
 
   return (
     <div className='app'>
-      <h1>Lista de Tarefas</h1>
+      <h1>Lista de Compras</h1>
       <Search
         search={search}
         setSearch={setSearch} />
-      <div className='todo-list'>
-        {todos
-          .filter((todo) =>
-            todo.text.includes(search)
+      <div className='product-list'>
+        {products.filter((product) =>
+          product.text.includes(search)
           )
-          .map((todo) => (
-            <Todo
-              key={todo.id}
-              todo={todo}
-              removeTodo={removeTodo}
-              completeTodo={completeTodo} />
+          .map((product) => (
+            <Product
+              key={product.id}
+              product={product}
+              removeProduct={removeProduct}
+              completeProduct={completeProduct} 
+            />
           ))}
       </div>
-      <TodoForm addTodo={addTodo} />
+      <ProductForm addProduct={addProduct} />
     </div>
   )
 }
 
-export default App;
+export default App

@@ -1,12 +1,12 @@
 const Search = ({ search, setSearch }) => {
     return(
         <div className="search">
-            <h2>Pesquisar: </h2>
+            <h2>Pesquisar</h2>
             <input 
                 type="text" 
                 placeholder="Digite para pesquisar..." 
                 value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                onChange={(e) => setSearch(e.target.value.toLowerCase())}
             />
         </div>
     )
