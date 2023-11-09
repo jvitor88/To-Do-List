@@ -1,4 +1,5 @@
 {
+  //link da homepage
   "homepage": "https://compras.jvsilveira.dev.br",
   "name": "lista-compras",
   "private": true,
