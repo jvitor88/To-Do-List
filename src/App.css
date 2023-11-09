@@ -44,7 +44,8 @@ h1{
     align-items: center;
     width: 100%;
     font-size: 28px;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
 }
 
 .content{
@@ -82,6 +83,7 @@ input, select{
     border-radius: 10px;
     border: 1px solid #fff;
     width: 100%;
+    font-family: 'Kanit', sans-serif;
 }
 
 .complete{

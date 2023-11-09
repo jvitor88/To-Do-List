@@ -20,7 +20,7 @@ const ProductForm = ({addProduct, removeProduct}) => {
                 placeholder="Nome do Produto"
                 value={value}
                 onChange={(e)=>{
-                    setValue(e.target.value)
+                    setValue(e.target.value.toUpperCase())
                 }}/>
                 <div className="button-container">
                     <button className="complete" onClick={Inserir}>Inserir</button>

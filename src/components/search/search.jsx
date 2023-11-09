@@ -6,7 +6,7 @@ const Search = ({ search, setSearch }) => {
                 type="text" 
                 placeholder="Digite para pesquisar..." 
                 value={search}
-                onChange={(e) => setSearch(e.target.value.toLowerCase())}
+                onChange={(e) => setSearch(e.target.value.toUpperCase())}
             />
         </div>
     )
